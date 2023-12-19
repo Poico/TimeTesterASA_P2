@@ -16,13 +16,13 @@ TimeTesterASA_P2 is a performance analysis tool designed to measure and visualiz
 ## Usage
 Follow these steps to compile and run the project:
 
-# 1. Compile the C++ file using the following command:
+#### 1. Compile the C++ file using the following command:
 g++ -std=c++11 -O3 -Wall -o fileName fileName.cpp -lm
 
-# 2. Make the script executable:
+#### 2. Make the script executable:
  chmod +xr buildPlot.sh
 
-# 3. Run the script:
+#### 3. Run the script:
  ./buildPlot.sh
 
 ## License

@@ -6,9 +6,9 @@ read executable
 
 mkdir -p tests
 
-for i in $(seq 50000 100 100000);
+for i in $(seq 50000 100 60000);
 do echo $i;
-    ./gen_tuganet $i $i 100 1 1000 > tests/testfile$i
+    ./gen_tuganet $i $((5*i)) 100 1 $i > tests/testfile$i
     
 done
 

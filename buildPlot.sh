@@ -23,7 +23,7 @@ awk '/^tests\/testfile/{gsub("tests/testfile", ""); num=$0} /^real/{gsub("real\t
 
 sort -n plot_data.txt > plot_data_sorted.txt
 
-gnuplot -p -e "set xlabel 'Testfile Number'; set ylabel 'Execution Time (s)'; set yrange [0:0.3]; plot 'plot_data_sorted.txt' using 1:2 smooth csplines with lines title 'Execution Time'"
+gnuplot -p -e "set xlabel 'Testfile Number'; set ylabel 'Execution Time (s)'; set yrange [0.05:0.1]; plot 'plot_data_sorted.txt' using 1:2 smooth csplines with lines title 'Execution Time'"
 
 rm time_tests.txt
 rm -r tests
